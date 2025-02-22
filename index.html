@@ -132,25 +132,29 @@
         .language-switcher:hover {
             background-color: #005bb5;
         }
+        /* Скрытие элементов по умолчанию */
+        [data-lang="en"] {
+            display: none;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="logo.jpg" alt="Логотип Голубой воздух">
+            <img src="images/logo.jpg" alt="Логотип Голубой воздух">
             <span class="slogan" data-lang="ru">Blue air for clean fuel</span>
-            <span class="slogan" data-lang="en" style="display: none;">Blue air for clean fuel</span>
+            <span class="slogan" data-lang="en">Blue air for clean fuel</span>
         </div>
         <nav>
             <a href="#" data-lang="ru">Главная</a>
-            <a href="#" data-lang="en" style="display: none;">Home</a>
+            <a href="#" data-lang="en">Home</a>
             <a href="#" data-lang="ru">О воздухе</a>
-            <a href="#" data-lang="en" style="display: none;">About Air</a>
+            <a href="#" data-lang="en">About Air</a>
             <a href="#" data-lang="ru">Преимущества</a>
-            <a href="#" data-lang="en" style="display: none;">Benefits</a>
+            <a href="#" data-lang="en">Benefits</a>
             <a href="https://t.me/ggrb_morpzag" target="_blank" data-lang="ru">Контакты</a>
-            <a href="https://t.me/ggrb_morpzag" target="_blank" data-lang="en" style="display: none;">Contacts</a>
+            <a href="https://t.me/ggrb_morpzag" target="_blank" data-lang="en">Contacts</a>
         </nav>
         <button class="language-switcher" onclick="toggleLanguage()">EN</button>
     </header>
@@ -158,19 +162,43 @@
     <main>
         <section>
             <h2 data-lang="ru">Что такое голубой воздух?</h2>
-            <h2 data-lang="en" style="display: none;">What is Blue Air?</h2>
+            <h2 data-lang="en">What is Blue Air?</h2>
             <p class="content" data-lang="ru">
                 Голубой воздух — это не просто метафора, а реальная потребность нашего общества в чистом, свежем воздухе. 
                 В городах и промышленных районах качество воздуха часто страдает из-за выбросов от автомобилей, заводов и бытовых источников загрязнения.
                 Чистый воздух необходим для здоровья человека, поддержания экосистем и предотвращения климатических изменений.
             </p>
-            <p class="content" data-lang="en" style="display: none;">
+            <p class="content" data-lang="en">
                 Blue air is not just a metaphor, but a real need of our society for clean, fresh air. 
                 In cities and industrial areas, air quality often suffers due to emissions from cars, factories, and household pollution sources.
                 Clean air is essential for human health, maintaining ecosystems, and preventing climate change.
             </p>
             <div class="image-container">
-                <img src="green-trees.jpg" alt="Чистый воздух">
+                <img src="images/green-trees.jpg" alt="Чистый воздух">
+            </div>
+        </section>
+
+        <section>
+            <h2 data-lang="ru">Преимущества голубого воздуха</h2>
+            <h2 data-lang="en">Benefits of Blue Air</h2>
+            <p class="content" data-lang="ru">
+                <strong>1️⃣ Здоровье человека</strong>: Чистый воздух улучшает работу дыхательной системы, уменьшает риск аллергий и респираторных заболеваний.
+                Люди, живущие в зонах с низким уровнем загрязнения, живут в среднем на 5–7 лет дольше.
+            </p>
+            <p class="content" data-lang="en">
+                <strong>1️⃣ Human Health</strong>: Clean air improves the respiratory system, reduces the risk of allergies and respiratory diseases.
+                People living in areas with low pollution levels live on average 5–7 years longer.
+            </p>
+            <p class="content" data-lang="ru">
+                <strong>2️⃣ Экологический баланс</strong>: Голубой воздух необходим для стабильного функционирования экосистем.
+                Чистая атмосфера способствует фотосинтезу растений, улучшает состояние почвы и водоемов.
+            </p>
+            <p class="content" data-lang="en">
+                <strong>2️⃣ Ecological Balance</strong>: Blue air is essential for the stable functioning of ecosystems.
+                Clean atmosphere promotes plant photosynthesis and improves soil and water quality.
+            </p>
+            <div class="image-container">
+                <img src="images/wind-turbines.jpg" alt="Преимущества чистого воздуха">
             </div>
         </section>
 
@@ -180,18 +208,18 @@
     <footer>
         <div class="footer-left">
             <p data-lang="ru">&copy; 2025 Голубой воздух. Все права защищены.</p>
-            <p data-lang="en" style="display: none;">&copy; 2025 Blue Air. All rights reserved.</p>
+            <p data-lang="en">&copy; 2025 Blue Air. All rights reserved.</p>
             <p class="slogan" data-lang="ru">Blue air for clean fuel</p>
-            <p class="slogan" data-lang="en" style="display: none;">Blue air for clean fuel</p>
+            <p class="slogan" data-lang="en">Blue air for clean fuel</p>
             <div class="crypto-logos">
                 <a href="https://phantom.app" target="_blank">
-                    <img src="phantom-logo.svg" alt="Phantom" width="50" height="50">
+                    <img src="images/phantom-logo.svg" alt="Phantom" width="50" height="50">
                 </a>
                 <a href="https://pump.fun" target="_blank">
-                    <img src="pump-logo.png" alt="Pump.fun" width="50" height="50">
+                    <img src="images/pump-logo.png" alt="Pump.fun" width="50" height="50">
                 </a>
                 <a href="https://solana.com" target="_blank">
-                    <img src="solana-logo.svg" alt="Solana" width="50" height="50">
+                    <img src="images/solana-logo.svg" alt="Solana" width="50" height="50">
                 </a>
             </div>
         </div>
@@ -199,7 +227,7 @@
             <a href="https://t.me/ggrb_morpzag" class="footer-link" target="_blank">GGRB_MORPZAG</a>
         </div>
         <!-- Логотип в правом нижнем углу -->
-        <img src="logo-small.png" alt="Логотип" class="footer-logo">
+        <img src="images/logo-small.png" alt="Логотип" class="footer-logo">
     </footer>
 
     <script>
